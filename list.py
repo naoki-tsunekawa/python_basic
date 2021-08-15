@@ -78,12 +78,27 @@ r = [1, 2, 3, 4, 5, 1, 2, 3]
 # indexメソッドを使えばリストの中の物の位置を検索できる
 print(r.index(3, 3))
 
+# カウント
+print(r.count(3))
 
+# ソート
+r.sort()
+print(r)
 
+# 逆にソート
+r.sort(reverse=True)
+print(r)
 
+# リストに分けて格納
+s = 'My name is Mike.'
+to_split = s.split(' ')
+print(to_split)
+# 元に戻す(文字列のメソッド)
+x = ' '.join(to_split)
+print(x)
 
-
-
+#関数のヘルプの呼び出し
+print(help(list))
 
 
 
