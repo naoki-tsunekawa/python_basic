@@ -98,9 +98,18 @@ x = ' '.join(to_split)
 print(x)
 
 #関数のヘルプの呼び出し
-print(help(list))
+# print(help(list))
 
 
+# リストのコピー x.copy() or x[:]
+# 注意点
+i = [1, 2, 3, 4, 5]
+j = i #参照渡し
+# ↑jを変更するとiも変わってしまう。
 
-
+x = [1, 2, 3, 4, 5]
+y = x.copy()
+y[0] = 100
+print('y =', y)
+print('x =', x)
 
