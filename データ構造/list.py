@@ -113,3 +113,30 @@ y[0] = 100
 print('y =', y)
 print('x =', x)
 
+# リストの使い所
+# バスの乗車人数判定
+# ============================================
+# バスの最大乗車人数が10人の場合
+# 乗れるか乗れないかを判定する
+# ============================================
+seat = []
+def BusRide(ride):
+	max = 10
+	min = 0
+	if min <= len(seat) < max:
+		seat.append(ride)
+		print("OK")
+	else:
+		print("NG")
+
+BusRide(1)
+BusRide(2)
+BusRide(3)
+BusRide(4)
+BusRide(5)
+BusRide(6)
+BusRide(7)
+BusRide(8)
+BusRide(9)
+BusRide(10)
+BusRide(11)
