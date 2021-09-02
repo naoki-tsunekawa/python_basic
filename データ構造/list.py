@@ -191,3 +191,28 @@ new_tuple = (1, 2, 3) + (4, 5,)
 print(new_tuple)
 # 出力結果
 # (1, 2, 3, 4, 5)
+
+# タプルのアンパッキング
+num_tuple = (10, 20)
+print(num_tuple)
+# 出力結果
+# (10, 20)
+
+x, y = num_tuple
+print(x, y)
+# 出力結果
+# 10 20
+# xとyにそれぞれを代入している
+# x, y = 10, 20
+# pythonではx, yにそれぞれtupleを展開するという意味になる
+# 例えば...
+min, max = 0, 100
+print(min, max)
+# ※ただ長すぎるとコードが読み辛くなるので注意
+
+# iとjの値を入れ替えたい
+i = 10
+j = 20
+
+i, j = j, i
+print(i, j)
