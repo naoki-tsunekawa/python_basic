@@ -24,3 +24,59 @@ dict2 = dict([('a', 10), ('b', 20)])
 print(dict2)
 # 出力結果
 # {'a': 10, 'b': 20}
+
+# dictのメソッド(代表的なもの)
+# keys()とvalues()
+d = {'x': 10, 'y': 20}
+print(d.keys())
+print(d.values())
+# 出力結果
+# dict_keys(['x', 'y'])
+# dict_values([10, 20])
+
+# dictの更新メソッド
+# update()　上書きする（オーバーライドする）
+d2 = {'x':  1000, 'j': 500}
+d.update(d2)
+print(d)
+# 出力結果
+# {'x': 1000, 'y': 20, 'j': 500}
+
+# dictの中身をとる
+print(d['x'])
+print(d.get('x'))
+# 出力結果
+# 1000
+# 1000
+# キーがないものはエラー
+# getメソッドを使った場合は Noneを返す
+
+# dictの中身を取り出したい
+# pop()
+print(d.pop('x'))
+# 出力結果
+# 1000
+
+# dictの中身を削除したい
+# del
+print(d)
+# 出力結果
+# {'y': 20, 'j': 500}
+del d
+# print(d)
+# 出力結果
+# NameError: name 'd' is not defined
+
+d = {'x': 100, 'y': 200}
+# clear　初期化
+d.clear()
+print(d)
+# 出力結果
+# {}
+
+# dictの中のキーを指定して検索するメソッド
+d = {'x': 100, 'y': 200}
+# 'x' in d
+print('x' in d)
+# 出力結果
+# True
